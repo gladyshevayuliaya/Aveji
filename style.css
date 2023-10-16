@@ -98,8 +98,14 @@
  }
  .grid-item-about {
     grid-row: 5;
-    grid-column: 1/span 6; 
+    grid-column: 1/span 3; 
  }
+
+ .grid-item-about-text {
+   grid-row: 5;
+    grid-column: 4/span 3; 
+ }
+
  .grid-item-steps {
     grid-row: 6;
     grid-column: 1/span 6; 
@@ -124,6 +130,8 @@
     grid-row: 10;
     grid-column: 1/span 6; 
  }
+
+ 
  
  /*
  .about {
