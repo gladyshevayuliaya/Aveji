@@ -8,13 +8,6 @@
 
 }
 
-[class^='grid-item'] {
-    outline: 1px #f90 dashed; 
-     
-     
-    
-  }
-  
 .grid-item-logo {
     grid-column: 1/span 4;
  }
