@@ -1,3 +1,4 @@
+@import url('grid.css');
 @font-face {
    font-family: "Roboto";
    src: url("Roboto-Regular.ttf");
@@ -60,7 +61,7 @@ h3 {
   margin: 10px 0px;
 }
 p {
-   font-size: 16px;
+   font-size: 20px;
    font-family: "Roboto_Light";
    font-weight: lighter;
    line-height: 1.5;
@@ -76,7 +77,17 @@ a {
       
 }
 
-
+.img1 {
+  background-image: url("spacejoy-IH7wPsjwomc-unsplash 1.jpg");
+  width: 678px;
+  height: 809px;
+}
+.img2 {
+  background-image: url("michael-oxendine-GHCVUtBECuY-unsplash (1) 1.jpg");
+  width: 329px;
+  height: 493px;
+ 
+}
 .testimonials-text {
   font-size: 18px;
    font-family: Arial, Helvetica, sans-serif;
