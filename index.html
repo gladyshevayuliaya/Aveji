@@ -4,8 +4,27 @@
     <title>Aveji</title>
     <style media="all">
     @import url('style.css');
-    @import url('grid.css');
+    
+    
     </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).bind("resize", resizeWindow);
+        function resizeWindow(e){
+          var newWindowWidth = $(window).width();
+    
+          // Если ширина меньше 600 px, используется таблица стилей для мобильного
+          if(newWindowWidth < 600){
+            $("link[rel=stylesheet]").attr({href : "mobile.css"});
+          } else if(newWindowWidth > 600){
+            // Если ширина больше 600 px, используется таблица стилей для десктопа
+            $("link[rel=stylesheet]").attr({href : "style.css"});
+          }
+        }
+      });
+    </script>
 </head>
 <body>
     <div class="grid-item">
@@ -37,10 +56,16 @@
         <p class="text">Мы можем произвести любую мебель для <br /> вашего проекта и найти производственное <br /> решение любой задумки.</p>
     </div>
     <div class="grid-item-hero-img1">
-        <img src="spacejoy-IH7wPsjwomc-unsplash 1.jpg">
+        <div class="img1">
+
+        </div>
+        <!--<img src="spacejoy-IH7wPsjwomc-unsplash 1.jpg"> -->
     </div>
     <div class="grid-item-hero-img2">
-        <img src="michael-oxendine-GHCVUtBECuY-unsplash (1) 1.jpg">
+        <!-- <img src="michael-oxendine-GHCVUtBECuY-unsplash (1) 1.jpg"> -->
+        <div class="img2">
+
+        </div>
     </div>
 
 <div class="grid-item-about">
