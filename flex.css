@@ -1,9 +1,17 @@
 .flex-logo {
-    align-items: flex-start;
+    
+    flex-grow: 2;
 }
 .flex-menu {
-    align-items: flex-start;
+    
+    flex-grow: 1;
 }
 .flex-contact {
-    align-items: flex-start;
+   
+}
+.flex-heading {
+max-width: 794px;
+}
+.flex-link-hero {
+ 
 }
