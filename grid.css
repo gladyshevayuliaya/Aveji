@@ -2,19 +2,21 @@
 
     display: inline-grid;
     
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-template-columns: repeat(8, 1fr);
     grid-auto-flow: row;
     align-items: stretch;
-    gap: clamp(5px, 0px, 10px)
+    gap: clamp(5px, 0px, 10px);
 
 }
+
+/*
 [class^='grid-item'] {
   outline: 1px #f90 dashed;
   display: inline-grid;
   
  
 }
-
+*/
 
 .grid-item-logo {
     grid-column: 1/span 4;
@@ -22,14 +24,18 @@
  .logo {
     width: 70px;
     height: 75px;
+    position: relative;
+    top: 10px;
  }
  .grid-item-menu {
     grid-column: 5/span 2; 
+    
  }
  
  .grid-item-contact {
    grid-column: 7/span 2; 
     text-align: right;
+    margin: 0px 10px;
  }  
  
  
@@ -44,8 +50,8 @@
   
     grid-row: 4;
      grid-column: 7/span 2;
-     
-    
+     text-align: right;
+     margin: 55px 10px;
      
  }
  .grid-item-text-hero {
@@ -55,13 +61,14 @@
  .grid-item-hero-img1 {
     grid-row: 6/span 2;
      grid-column: 5/span 4;
-     align-self: end;
+     
     
     
  }
  .grid-item-hero-img2 {
     grid-row: 7;
      grid-column: 1/span 2;
+    
      
  }
  .grid-item-about {
@@ -84,7 +91,7 @@
  .grid-item-steps-items {
    grid-row: 9;
     grid-column: 5/span 2; 
-    margin: 110px 0px 0px 0px;
+    margin: 110px 0px 40px 0px;
  }
  .grid-item-steps-items-idea {
    grid-row: 10;
@@ -93,45 +100,87 @@
  .grid-item-steps-items-idea-text {
    grid-row: 10;
    grid-column: 7/span 2;
+   
  }
+ .grid-item-steps-items-line-1 {
+  grid-row: 11;
+   grid-column: 5/span 4;
+   margin: 10px 0px;
+ }
+ 
  .grid-item-steps-items-tehnical {
-   grid-row: 11;
+   grid-row: 12;
    grid-column: 5/span 2;
  }
  .grid-item-steps-items-tehnical-text {
-   grid-row: 11;
-   grid-column: 7/span 2;
- }
- .grid-item-steps-items-commercial {
    grid-row: 12;
+   grid-column: 7/span 2;
+ } 
+ .grid-item-steps-items-line-2 {
+  grid-row: 13;
+   grid-column: 5/span 4;
+   margin: 10px 0px;
+ }
+ 
+ .grid-item-steps-items-commercial {
+   grid-row: 14;
    grid-column: 5/span 2;
  }
  .grid-item-steps-items-commercial-text {
-   grid-row: 12;
+   grid-row: 14;
    grid-column: 7/span 2;
  }
+ .grid-item-steps-items-line-3 {
+  grid-row: 15;
+   grid-column: 5/span 4;
+   margin: 10px 0px;
+ }
  .grid-item-steps-items-preparation {
-   grid-row: 13;
+   grid-row: 16;
    grid-column: 5/span 2;
  }
  .grid-item-steps-items-preparation-text {
-   grid-row: 13;
+   grid-row: 16;
    grid-column: 7/span 2;
  }
+ .grid-item-steps-items-line-4 {
+  grid-row: 17;
+   grid-column: 5/span 4;
+   margin: 10px 0px;
+ }
  .grid-item-steps-items-production {
-   grid-row: 14;
+   grid-row: 18;
    grid-column: 5/span 2;
  }
  .grid-item-steps-items-production-text {
-   grid-row: 14;
+   grid-row: 18;
    grid-column: 7/span 2;
+ }
+ .grid-item-steps-items-line-5 {
+  grid-row: 19;
+   grid-column: 5/span 4;
+   margin: 10px 0px;
  }
 
  .grid-item-projects-text {
-    grid-row: 15;
+    grid-row: 20;
     grid-column: 1/span 6; 
     margin: 110px 0px 30px 0px;
  }
+ /*----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
  .grid-item-projects {
 
   display: inline-grid;
@@ -258,11 +307,12 @@
   grid-column: 1/span 6; 
   margin: 110px 0px 30px 0px;
 }
+*/
 .grid-item-projects {
 display: inline-grid;
 gap: 30px 0px;
 grid-template-columns: repeat(9, 1fr);
-grid-row: 16;
+grid-row: 21;
 grid-column: 1/span 9;
 
  
@@ -295,56 +345,70 @@ grid-row: 2;
 grid-column: 7/span 3; 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------*/
 .grid-item-testimonials {
-  grid-row: 17;
+  grid-row: 22;
   grid-column: 1/span 6; 
   margin: 110px 0px 0px 0px;
 }
 .grid-item-testimonials-text-1 {
- grid-row: 18;
+ grid-row: 23;
   grid-column: 2/span 2; 
   text-align: center;
   outline: 1px #000 solid;
   
 }
 .grid-item-testimonials-text-2 {
- grid-row: 18;
+ grid-row: 23;
  grid-column: 4/span 2; 
  text-align: center;
  outline: 1px #000 solid;
  
 }
 .grid-item-testimonials-text-3 {
- grid-row: 18;
+ grid-row: 23;
  grid-column: 6/span 2; 
  text-align: center;
  outline: 1px #000 solid;
  
 }
 .grid-item-form-img {
- grid-row: 19;
+ grid-row: 24;
   grid-column: 1/span 4; 
   margin: 110px 0px 0px 0px;
 
 }
 .grid-item-form {
-  grid-row: 19;
+  grid-row: 24;
   grid-column: 5/span 4; 
   margin: 110px 0px 0px 0px;
 }
 .grid-item-footer-info {
- grid-row: 20;
+ grid-row: 25;
  grid-column: 1/span 2; 
  margin: 110px 0px 0px 0px;
 }
 .grid-item-footer {
-  grid-row: 20;
+  grid-row: 25;
   grid-column: 3/span 4; 
   text-align: center;
   margin: 110px 0px 0px 0px;
 }
 .grid-item-footer-social {
- grid-row: 20;
+ grid-row: 25;
  grid-column: 7/span 2; 
  text-align: center;
  margin: 110px 0px 0px 0px;
